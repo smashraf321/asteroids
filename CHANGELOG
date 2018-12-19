@@ -1,0 +1,9 @@
+Project:
+11/18: Started learning about SFML.
+11/19: Finalized idea for game.
+11/20: Acquired resources and setup environment i.e. installed SFML.
+11/21: Started working on the game.
+11/25: Implemented game mechanics and scores display
+11/26: Lives Implemented.
+11/27: High-score implemented.
+11/28: Fine tuned code for clean exit. 

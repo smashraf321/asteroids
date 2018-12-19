@@ -1,0 +1,47 @@
+Project: space_shooter (Version of Asteroids)
+
+This project is an implementation of Asteroids arcade game.
+Its done in C++ and uses SFML library for graphics.
+SFML should be installed before the game can be run.
+On Mac OS(homebrew for Mac should be installed already):
+brew install sfml
+On Ubuntu:
+sudo apt-get install libsfml-devel
+On Fedora:
+sudo dnf install SFML-devel
+
+Game is simple to play:
+1. You shoot bullets, hitting asteroids increases your score.
+   (Score is shown in top centre of screen)
+2. You have 5 lives. (shown in bottom left of screen)
+   Decreases when asteroids hit you.
+3. Previous High-score is stored in text file and if you beat it;
+   new High-score will be updated and be loaded next time you open
+   the game. (High-score is displayed at bottom right of screen)
+   Its reset to 0 before submission on canvas.
+4. Controls:
+   4.1 Spacebar to fire bullets
+   4.2 up arrow for thrust
+   4.3 down arrow for brake
+   4.4 right arrow to go Right
+   4.5 left arrow to go Left
+   4.6 'Q' quits the game (not case sensitive); can also close the
+       window to quit the game. High-score if you make, won't be saved
+       though. You should play till you run out of lives for High-score
+       to be saved. regular scores aren't saved and leaderboards are
+       not implemented.
+   The motion is like a spaceship motion. For example up and right won't
+   be an exact diagonal cuz thruster will be active like in actual ship.
+   Should play a bit to get hang of it.
+
+ Acknowledgment and Resources used:
+ Internet
+
+ Important note:
+ So I tried running the game on ubuntu and fedora virtual box. Apparently;
+ the SFML libraries the package manager downloaded don't support the same
+ features as the one on my mac. The game is laggy and explosions don't load.
+ It says failed to load texture file size is too large and also some methods
+ like setFillColor( ) of sf::Text class are not present so code will compile
+ only if I comment those lines. But explosions don't work anyways and window
+ sizing is bad in ubuntu and fedora. The game works perfectly on my mac though.
