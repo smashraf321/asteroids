@@ -43,6 +43,7 @@ public:
 		int n = frames.size();
 		if (Frame >= n) Frame -= n;
 		if (n>0) sprite.setTextureRect( frames[int(Frame)] );
+
 	}
 
 	bool isEnd()
@@ -519,5 +520,6 @@ int main()
 	  it=entities.erase(it);
 	  delete e;
 	}
+	//ending
     return 0;
 }
